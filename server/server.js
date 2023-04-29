@@ -10,7 +10,7 @@ const portfolioRoute = require('./routes/portfolioRoutes');
 
 app.use(express.json());
 
-app.use('https://portfolio-production-f0e9.up.railway.app/api/portfolio', portfolioRoute);
+app.use('/api/portfolio', portfolioRoute);
 
 
 
