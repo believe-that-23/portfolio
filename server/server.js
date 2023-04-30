@@ -1,11 +1,11 @@
 if (process.env.NODE_ENV !== "production") {
     require('dotenv').config();
 }
-const cors = require('cors');
 
-app.use(cors());
 const express = require('express');
 const app = express();
+const cors = require('cors');
+app.use(cors());
 const dbConfig = require('./config/dbConfig')
 
 const portfolioRoute = require('./routes/portfolioRoutes');
